@@ -16,7 +16,7 @@ body {
 .header {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -25,12 +25,12 @@ body {
 }
 
 .nav {
-  max-width: 90vw;
+  max-width: min(1200px, 90%);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 4vw, 2rem);
 }
 
 .logo {
@@ -73,17 +73,17 @@ body {
 }
 
 .hero-content {
-  max-width: 60vw;
-  padding: 0 2rem;
+  max-width: min(800px, 90%);
+  padding: 0 clamp(1rem, 4vw, 2rem);
   z-index: 2;
 }
 
 .hero h1 {
   font-family: 'Orbitron', monospace;
-  font-size: 4rem;
+  font-size: clamp(2rem, 8vw, 4rem);
   font-weight: 900;
   line-height: 1.2;
-  padding-top: 60px;
+  padding-top: clamp(40px, 8vw, 60px);
   margin-bottom: 1rem;
   background: linear-gradient(45deg, #8b5cf6, #dc2626, #1e40af);
   -webkit-background-clip: text;
@@ -104,14 +104,14 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
   color: #e5e7eb;
   margin-bottom: 2rem;
   font-weight: 300;
 }
 
 .hero-description {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
   color: #9ca3af;
   margin-bottom: 3rem;
   line-height: 1.8;
@@ -125,10 +125,10 @@ body {
 }
 
 .btn {
-  padding: 1rem 2rem;
+  padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
   border: none;
   border-radius: 50px;
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -163,19 +163,19 @@ body {
 
 /* About Section */
 .about {
-  padding: 6rem 0;
+  padding: clamp(3rem, 8vw, 6rem) 0;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
 }
 
 .container {
-  max-width: 90vw;
+  max-width: min(1200px, 90%);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 4vw, 2rem);
 }
 
 .section-title {
   font-family: 'Orbitron', monospace;
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 6vw, 3rem);
   text-align: center;
   margin-bottom: 3rem;
   color: #8b5cf6;
@@ -185,7 +185,7 @@ body {
 .about-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 4rem;
+  gap: clamp(2rem, 6vw, 4rem);
   align-items: center;
 }
 
@@ -197,10 +197,8 @@ body {
 }
 
 .about-image img {
-  width: 25vw;
-  height: 25vw;
-  max-width: 300px;
-  max-height: 300px;
+  width: clamp(200px, 25vw, 300px);
+  height: clamp(200px, 25vw, 300px);
   border-radius: 50%;
   border: 5px solid #8b5cf6;
   box-shadow: 0 0 50px rgba(139, 92, 246, 0.3);
@@ -209,13 +207,13 @@ body {
 }
 
 .about-text h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   color: #dc2626;
   margin-bottom: 1rem;
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   color: #e5e7eb;
   margin-bottom: 1.5rem;
   line-height: 1.8;
@@ -233,14 +231,14 @@ body {
 
 /* Skills Section */
 .skills {
-  padding: 6rem 0;
+  padding: clamp(3rem, 8vw, 6rem) 0;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: clamp(1rem, 3vw, 2rem);
   margin-top: 3rem;
 }
 
@@ -248,7 +246,7 @@ body {
   background: rgba(30, 64, 175, 0.1);
   border: 2px solid #1e40af;
   border-radius: 15px;
-  padding: 2rem;
+  padding: clamp(1.5rem, 4vw, 2rem);
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
@@ -277,13 +275,13 @@ body {
 }
 
 .skill-icon {
-  font-size: 3rem;
+  font-size: clamp(2rem, 6vw, 3rem);
   color: #8b5cf6;
   margin-bottom: 1rem;
 }
 
 .skill-card h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   color: #ffffff;
   margin-bottom: 1rem;
 }
@@ -295,14 +293,14 @@ body {
 
 /* Projects Section */
 .projects {
-  padding: 6rem 0;
+  padding: clamp(3rem, 8vw, 6rem) 0;
   background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  gap: clamp(1rem, 3vw, 2rem);
   margin-top: 3rem;
 }
 
@@ -321,12 +319,12 @@ body {
 }
 
 .project-image {
-  height: 200px;
+  height: clamp(150px, 20vw, 200px);
   background: linear-gradient(45deg, #8b5cf6, #dc2626, #1e40af);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 8vw, 4rem);
   color: white;
 }
 
@@ -339,11 +337,11 @@ body {
 }
 
 .project-content {
-  padding: 2rem;
+  padding: clamp(1.5rem, 4vw, 2rem);
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   color: #8b5cf6;
   margin-bottom: 1rem;
 }
@@ -352,6 +350,7 @@ body {
   color: #e5e7eb;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
 .project-tech {
@@ -396,7 +395,7 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  padding: 0.3rem 0.8rem;
+  padding: clamp(0.3rem, 1vw, 0.5rem) clamp(0.6rem, 2vw, 1rem);
   border-radius: 50px;
   transition: all 0.3s ease;
   display: inline-block;
@@ -404,7 +403,7 @@ body {
   box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
   border: none;
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
   white-space: nowrap;
   width: auto;
   min-width: fit-content;
@@ -419,7 +418,7 @@ body {
 
 /* Contact Section */
 .contact {
-  padding: 6rem 0;
+  padding: clamp(3rem, 8vw, 6rem) 0;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
 }
 
@@ -428,8 +427,9 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: start;
   justify-items: center;
-  max-width: 90vw;
+  max-width: min(1200px, 90%);
   margin: 0 auto;
+  gap: clamp(2rem, 6vw, 4rem);
 }
 
 .contact-info {
@@ -438,7 +438,7 @@ body {
 }
 
 .contact-info h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   color: #8b5cf6;
   margin-bottom: 2rem;
   text-align: left;
@@ -452,10 +452,10 @@ body {
 }
 
 .contact-item i {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   color: #dc2626;
   margin-right: 1rem;
-  width: 3vw;
+  width: clamp(2rem, 4vw, 3rem);
   text-align: center;
 }
 
@@ -467,11 +467,11 @@ body {
 
 .contact-form {
   background: rgba(30, 64, 175, 0.1);
-  padding: 2rem;
+  padding: clamp(1.5rem, 4vw, 2rem);
   border-radius: 15px;
   border: 2px solid #1e40af;
   width: 100%;
-  max-width: 40vw;
+  max-width: min(500px, 100%);
 }
 
 .form-group {
@@ -488,12 +488,12 @@ body {
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 1rem;
+  padding: clamp(0.8rem, 2vw, 1rem);
   border: 2px solid #1e40af;
   border-radius: 10px;
   background: rgba(10, 10, 10, 0.5);
   color: #ffffff;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   transition: all 0.3s ease;
 }
 
@@ -540,13 +540,19 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 80vw) {
-  .nav-links {
-    display: none;
+@media (max-width: 1200px) {
+  .about-content {
+    gap: clamp(1.5rem, 4vw, 3rem);
   }
 
-  .hero h1 {
-    font-size: 2.5rem;
+  .contact-content {
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
   }
 
   .about-content {
@@ -556,10 +562,8 @@ body {
   }
 
   .about-image img {
-    width: 40vw;
-    height: 40vw;
-    max-width: 250px;
-    max-height: 250px;
+    width: clamp(200px, 40vw, 250px);
+    height: clamp(200px, 40vw, 250px);
   }
 
   .contact-content {
@@ -568,7 +572,7 @@ body {
   }
 
   .contact-form {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .contact-info {
@@ -584,12 +588,35 @@ body {
     align-items: center;
   }
 
-  .btn-project {
-    padding: 0.25rem 0.6rem;
-    font-size: 0.7rem;
-    white-space: nowrap;
-    width: auto;
-    min-width: fit-content;
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .about-image img {
+    width: clamp(150px, 50vw, 200px);
+    height: clamp(150px, 50vw, 200px);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 

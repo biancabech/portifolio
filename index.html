@@ -79,48 +79,42 @@
   <section id="skills" class="skills">
     <div class="container">
       <h2 class="section-title">MINHAS HABILIDADES</h2>
-      <div class="skills-grid">
-        <div class="skill-card fade-in">
+      <div class="skills-container">
+        <div class="skill-item fade-in">
           <div class="skill-icon">
             <i class="fab fa-angular"></i>
           </div>
           <h3>Angular</h3>
-          <p>Desenvolvimento de aplicações web modernas e responsivas com Angular framework.</p>
         </div>
-        <div class="skill-card fade-in">
+        <div class="skill-item fade-in">
           <div class="skill-icon">
             <i class="fab fa-microsoft"></i>
           </div>
           <h3>C#</h3>
-          <p>Desenvolvimento de sistemas robustos e escaláveis usando C# e .NET.</p>
         </div>
-        <div class="skill-card fade-in">
+        <div class="skill-item fade-in">
           <div class="skill-icon">
             <i class="fas fa-database"></i>
           </div>
           <h3>MySQL</h3>
-          <p>Design e gerenciamento de bancos de dados relacionais com MySQL.</p>
         </div>
-        <div class="skill-card fade-in">
+        <div class="skill-item fade-in">
           <div class="skill-icon">
             <i class="fas fa-terminal"></i>
           </div>
           <h3>SSH</h3>
-          <p>Configuração e gerenciamento de servidores através de SSH.</p>
         </div>
-        <div class="skill-card fade-in">
+        <div class="skill-item fade-in">
           <div class="skill-icon">
             <i class="fab fa-git-alt"></i>
           </div>
           <h3>Git</h3>
-          <p>Controle de versão e colaboração em equipe usando Git e GitHub.</p>
         </div>
-        <div class="skill-card fade-in">
+        <div class="skill-item fade-in">
           <div class="skill-icon">
-            <i class="fas fa-rocket"></i>
+            <i class="fas fa-cogs"></i>
           </div>
-          <h3>Inovação</h3>
-          <p>Sempre em busca de novas tecnologias e soluções criativas para problemas complexos.</p>
+          <h3>AI Code</h3>
         </div>
       </div>
     </div>
@@ -130,103 +124,116 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2 class="section-title">MEUS PROJETOS</h2>
-      <div class="projects-grid">
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <img src="assets/site-simplifique.png" alt="Simplifique+ Dashboard" class="project-icon">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Simplifique+</h3>
-            <p class="project-description">
-              Sistema completo para controle de turnover empresarial.
-              Dashboard interativo com análise em tempo real, alertas inteligentes
-              e relatórios avançados para gestão de RH.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Angular</span>
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">API REST</span>
+      <div class="carousel-container">
+        <button class="carousel-btn carousel-btn-prev" id="prevBtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <img src="assets/site-simplifique.png" alt="Simplifique+ Dashboard" class="project-icon">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Simplifique+</h3>
+                <p class="project-description">
+                  Sistema completo para controle de turnover empresarial.
+                  Dashboard interativo com análise em tempo real, alertas inteligentes
+                  e relatórios avançados para gestão de RH.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Angular</span>
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">API REST</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://biancabech.github.io/simplifique/" target="_blank" class="btn-project">
+                    Ver Projeto
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="project-links">
-              <a href="https://biancabech.github.io/simplifique/" target="_blank" class="btn-project">
-                Ver Projeto
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">E-Commerce Rock</h3>
-            <p class="project-description">
-              Plataforma de e-commerce temática rock com sistema de pagamento integrado,
-              catálogo de produtos e área administrativa completa.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Angular</span>
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">Stripe API</span>
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">E-Commerce Rock</h3>
+                <p class="project-description">
+                  Plataforma de e-commerce temática rock com sistema de pagamento integrado,
+                  catálogo de produtos e área administrativa completa.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Angular</span>
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Stripe API</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn-project">
+                    Em Desenvolvimento
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="project-links">
-              <a href="#" class="btn-project">
-                Em Desenvolvimento
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <i class="fas fa-music"></i>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Rock Manager</h3>
-            <p class="project-description">
-              Sistema de gestão para bandas de rock com controle de agenda,
-              repertório, contratos e finanças. Interface inspirada no mundo do rock.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Angular</span>
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">PDF Generator</span>
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Rock Manager</h3>
+                <p class="project-description">
+                  Sistema de gestão para bandas de rock com controle de agenda,
+                  repertório, contratos e finanças. Interface inspirada no mundo do rock.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Angular</span>
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">PDF Generator</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn-project">
+                    Em Desenvolvimento
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="project-links">
-              <a href="#" class="btn-project">
-                Em Desenvolvimento
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <i class="fas fa-code"></i>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Dev Tools Suite</h3>
-            <p class="project-description">
-              Conjunto de ferramentas para desenvolvedores: gerador de código,
-              validador de APIs, conversor de formatos e utilitários diversos.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Angular</span>
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">Web APIs</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="btn-project">
-                Em Desenvolvimento
-              </a>
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Dev Tools Suite</h3>
+                <p class="project-description">
+                  Conjunto de ferramentas para desenvolvedores: gerador de código,
+                  validador de APIs, conversor de formatos e utilitários diversos.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Angular</span>
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Web APIs</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn-project">
+                    Em Desenvolvimento
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <button class="carousel-btn carousel-btn-next" id="nextBtn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="carousel-dots" id="carouselDots">
+        <!-- Dots will be generated by JavaScript -->
       </div>
     </div>
   </section>

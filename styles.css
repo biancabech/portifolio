@@ -199,7 +199,7 @@ body {
 .about-image img {
   width: clamp(200px, 25vw, 300px);
   height: clamp(200px, 25vw, 300px);
-  border-radius: 50%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   border: 5px solid #8b5cf6;
   box-shadow: 0 0 50px rgba(139, 92, 246, 0.3);
   object-fit: cover;

@@ -203,7 +203,7 @@ body {
   border: 5px solid #8b5cf6;
   box-shadow: 0 0 50px rgba(139, 92, 246, 0.3);
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 .about-text h3 {
